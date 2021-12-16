@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <title>Views</title>
+    </head>
+    <body style="margin-left:10px">
+        <header>
+            <nav class="header">
+                <a href="/">HOME</a>
+                <a href="/newsletter">NEWSLETTER</a>
+                <a href="/about">ABOUT</a>
+            </nav>
+            <hr>
+            <h1>Views</h1>
+        </header>
+        <form action="/newsletter" method="POST">
+            <h3>Join the newsletter!</h3>
+
+            <input type="text" name="fName" placeholder="First Name" required>
+            <input type="text" name="lName" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <br>
+            <button class="button" type="submit">Sign Up</button>
+        </form>
+    </body>
+</html>
