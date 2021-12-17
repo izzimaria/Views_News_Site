@@ -59,7 +59,6 @@ def getNews():
 
     message += "Thanks for subscribing, and see you tomorrow!"
     
-    print(message)
     return message
 
 # function to send email
@@ -70,8 +69,9 @@ def sendEmail(message,data):
     smtp_server = "smtp.gmail.com"
     email = "views.daily.emails@gmail.com"
     subscribers = df['email']
-    password = input("Type your password and press enter: ")
-    
+    # password = input("Type your password and press enter: ")
+    password = "whatifb4dawhy--"
+
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
         server.login(email, password)
